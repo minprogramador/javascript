@@ -16,5 +16,11 @@ function dividir(num1, num2){
 	}
 }
 
-let ret = dividir(8, 2);
-console.log(ret);
+try{
+	let ret = dividir(8, 2);
+	console.log(ret);
+}catch(e){
+	console.log('nao foi possivel dividir');
+}finally{
+	console.log('vamos continuar...');
+}
